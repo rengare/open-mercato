@@ -409,10 +409,6 @@ export async function generateModuleRegistry(options: ModuleRegistryOptions): Pr
   const transFieldsChecksumFile = path.join(outputDir, 'translations-fields.generated.checksum')
   const enrichersOutFile = path.join(outputDir, 'enrichers.generated.ts')
   const enrichersChecksumFile = path.join(outputDir, 'enrichers.generated.checksum')
-  const interceptorsOutFile = path.join(outputDir, 'interceptors.generated.ts')
-  const interceptorsChecksumFile = path.join(outputDir, 'interceptors.generated.checksum')
-  const componentOverridesOutFile = path.join(outputDir, 'component-overrides.generated.ts')
-  const componentOverridesChecksumFile = path.join(outputDir, 'component-overrides.generated.checksum')
   const inboxActionsOutFile = path.join(outputDir, 'inbox-actions.generated.ts')
   const inboxActionsChecksumFile = path.join(outputDir, 'inbox-actions.generated.checksum')
   const guardsOutFile = path.join(outputDir, 'guards.generated.ts')
@@ -452,10 +448,6 @@ export async function generateModuleRegistry(options: ModuleRegistryOptions): Pr
   const transFieldsImports: string[] = []
   const enricherConfigs: string[] = []
   const enricherImports: string[] = []
-  const interceptorConfigs: string[] = []
-  const interceptorImports: string[] = []
-  const componentOverrideConfigs: string[] = []
-  const componentOverrideImports: string[] = []
   const inboxActionsConfigs: string[] = []
   const inboxActionsImports: string[] = []
   const guardConfigs: string[] = []
